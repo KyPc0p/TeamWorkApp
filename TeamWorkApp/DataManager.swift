@@ -12,41 +12,35 @@ class friendList {
     static let shared = friendList()
     
     let names = [
-        "John", "Aaron", "Tim", "Ted",
-        "Steven", "Sharon", "Nicola",
-        "Allan", "Bruce", "Carl"
+        "Billy", "Walter", "Tim", "Glad",
+        "Jason"
     ]
     
     let surnames = [
-        "Smith", "Dow", "Isaacson", "Pennyworth",
-        "Jankin", "Butler", "Black", "Robertson",
-        "Murphy", "Williams"
+        "Herrington", "White", "Cook", "Valakas",
+        "Statham"
     ]
     
     let avatar = [
-        "jjjj@mail.ru", "aaaa@mail.ru", "eeee@mail.ru",
-        "hhhh@mail.ru", "wwww@mail.ru", "mmmm@mail.ru",
-        "xxxx@mail.ru", "pppp@mail.ru", "ssss@mail.ru",
-        "llll@mail.ru"
+        "Billy Herrington", "Walter White", "Tim Cook",
+        "Glad Valakas", "Jason Statham"
     ]
     
     let personalInformation = [
-        "745396026", "145036843", "287185656", "293520954",
-        "562880225", "738594072", "825654134", "645898473",
-        "432349845", "459477625"
+        "American model and actor. Born in North Babylon, New York. Gained fame in Japan as an Internet meme, after a clip from one of my videos",
+        "Chemistry teacher and good family man. I love my job and children. I don't give anything illegal",
+        "American business executive, has been the chief executive officer of Apple Inc. since 2011!!. I love thin boxes",
+        "Veteran of combat operations of all world wars. Villager streamer.",
+        "I love Chinese martial arts, kickboxing and karate, wakeboarding, water skiing, windsurfing and rock climbing."
     ]
     
     let profilePhotos: [[String]] = [
-        ["JohnsPhoto1","JohnsPhoto2","JohnsPhoto3"],
-        ["John1","John2","John3"],
-        ["Photo1","Photo2","Photo3"],
-        ["JohnsPhoto1","JohnsPhoto2","JohnsPhoto3"],
-        ["John1","John2","John3"],
-        ["John1","John2","John3"],
-        ["Photo1","Photo2","Photo3"],
-        ["JohnsPhoto1","JohnsPhoto2","JohnsPhoto3"],
-        ["John1","John2","John3"],
-        ["Photo1","Photo2","Photo3"],
+        ["Billy1","Billy2","Billy3"],
+        ["Walter1","Walter2","Walter3"],
+        ["Tim1","Tim2","Tim3"],
+        ["Glad1","Glad2","Glad3"],
+        ["Jason1","Jason2","Jason3"]
     ]
     
+    private init() {}
 }

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "42307-82105-41730-80900-41192-79817-000-lead-Tim-Cook-xl-xl-xl.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
