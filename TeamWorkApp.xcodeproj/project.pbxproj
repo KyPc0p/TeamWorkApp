@@ -65,12 +65,28 @@
 				7963D34627F21A0A00859E69 /* AppDelegate.swift */,
 				7963D34827F21A0A00859E69 /* SceneDelegate.swift */,
 				7963D34A27F21A0A00859E69 /* ViewController.swift */,
-				7963D34C27F21A0A00859E69 /* Main.storyboard */,
-				7963D34F27F21A0B00859E69 /* Assets.xcassets */,
-				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
+				7963D35E27F3837000859E69 /* Storyboards */,
+				7963D35F27F383D500859E69 /* Resources */,
 				7963D35427F21A0B00859E69 /* Info.plist */,
 			);
 			path = TeamWorkApp;
+			sourceTree = "<group>";
+		};
+		7963D35E27F3837000859E69 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7963D34C27F21A0A00859E69 /* Main.storyboard */,
+				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7963D35F27F383D500859E69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7963D34F27F21A0B00859E69 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

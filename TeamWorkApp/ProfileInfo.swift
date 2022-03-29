@@ -69,7 +69,7 @@ struct Person {
             surname: "Efimov",
             profileAvatar: "MyProfilePhoto",
             personalInfo: "IOS разработчик и преподаватель на SwiftBook.ru",
-            profilePhotos: ["123","13123","21312"]
+            profilePhotos: ["Alexey1","Alexey2","Alexey3"]
         )
     }
 }
