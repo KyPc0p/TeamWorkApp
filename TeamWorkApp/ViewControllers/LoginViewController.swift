@@ -18,18 +18,18 @@ class LoginViewController: UIViewController {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
-        viewControllers.forEach {
-            if let newsNC = $0 as? UINavigationController {
-                guard let newsVC = newsNC.topViewController as! NewsViewController else {return}
-                newsVC.user = user
-            } else if let contactsNC = $0 as? UINavigationController {
-                guard let contactsVC = contactsNC.topViewController as? ContactsViewController else {return}
-                contactsVC.user = user
-            } else if let profileNC = $0 as? UINavigationController {
-                guard let profileVC = profileNC.topViewController as! ProfileViewController else {return}
-                profileVC.user = user
-            }
-        }
+//        viewControllers.forEach {
+//            if let newsNC = $0 as? UINavigationController {
+//                guard let newsVC = newsNC.topViewController as! NewsViewController else {return}
+//                newsVC.user = user
+//            } else if let contactsNC = $0 as? UINavigationController {
+//                guard let contactsVC = contactsNC.topViewController as? ContactsViewController else {return}
+//                contactsVC.user = user
+//            } else if let profileNC = $0 as? UINavigationController {
+//                guard let profileVC = profileNC.topViewController as! ProfileViewController else {return}
+//                profileVC.user = user
+//            }
+//        }
     }
     
     @IBAction func loginButtonPressed() {
