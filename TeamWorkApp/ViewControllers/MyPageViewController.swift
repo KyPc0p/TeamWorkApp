@@ -1,15 +1,15 @@
 //
-//  FriendPageViewController.swift
+//  MyPageViewController.swift
 //  TeamWorkApp
 //
-//  Created by Iliya Mayasov on 30.03.2022.
+//  Created by Iliya Mayasov on 02.04.2022.
 //
 
 import UIKit
 
-class FriendPageViewController: UIViewController {
+class MyPageViewController: UIViewController {
     
-    var friend: Person!
+    var myProfile: User!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var profilePhotosTableView: UITableView!
     @IBOutlet weak var fullNameTitle: UILabel!
@@ -19,28 +19,27 @@ class FriendPageViewController: UIViewController {
         super.viewDidLoad()
         profilePhotosTableView.dataSource = self
         profilePhotosTableView.delegate = self
-        avatarImage.image = UIImage(named: friend.profileAvatar)
+        avatarImage.image = UIImage(named: myProfile.person.profileAvatar)
         avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
-        fullNameTitle.text = friend.fullName
-        profileInfoLabel.text = friend.personalInfo
+        fullNameTitle.text = myProfile.person.fullName
+        profileInfoLabel.text = myProfile.person.personalInfo
     }
 }
-
-extension FriendPageViewController: UITableViewDataSource {
+extension MyPageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        friend.profilePhotos.count
+        myProfile.person.profilePhotos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath)
-        let photo = friend.profilePhotos[indexPath.row]
+        let photo = myProfile.person.profilePhotos[indexPath.row]
         cell.imageView?.image = UIImage(named: "\(photo)")
         return cell
     }
 }
 
-extension FriendPageViewController: UITableViewDelegate {
+extension MyPageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         350
     }
