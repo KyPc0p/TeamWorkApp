@@ -9,7 +9,8 @@ import UIKit
 
 class MyPageViewController: UIViewController {
     
-    var myProfile: User!
+    var myPage: Person!
+    
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var profilePhotosTableView: UITableView!
     @IBOutlet weak var fullNameTitle: UILabel!
@@ -19,22 +20,27 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
         profilePhotosTableView.dataSource = self
         profilePhotosTableView.delegate = self
-        avatarImage.image = UIImage(named: myProfile.person.profileAvatar)
-        avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
-        fullNameTitle.text = myProfile.person.fullName
-        profileInfoLabel.text = myProfile.person.personalInfo
+        fullNameTitle.text = myPage.fullName
+        profileInfoLabel.text = myPage.personalInfo
     }
+
+     override func viewDidLayoutSubviews() {
+        avatarImage.image = UIImage(named: myPage.profileAvatar)
+        avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
+    }
+
 }
+ 
 extension MyPageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        myProfile.person.profilePhotos.count
+        myPage.profilePhotos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath)
-        let photo = myProfile.person.profilePhotos[indexPath.row]
-        cell.imageView?.image = UIImage(named: "\(photo)")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath) as! ProfilePhotosTableViewCell
+        let photo = myPage.profilePhotos[indexPath.row]
+        cell.myImage.image = UIImage(named: "\(photo)")
         return cell
     }
 }
