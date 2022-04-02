@@ -19,13 +19,17 @@ class FriendPageViewController: UIViewController {
         super.viewDidLoad()
         profilePhotosTableView.dataSource = self
         profilePhotosTableView.delegate = self
-        avatarImage.image = UIImage(named: friend.profileAvatar)
-        avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
         fullNameTitle.text = friend.fullName
         profileInfoLabel.text = friend.personalInfo
     }
-}
 
+     override func viewDidLayoutSubviews() {
+        avatarImage.image = UIImage(named: friend.profileAvatar)
+        avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
+    }
+
+}
+ 
 extension FriendPageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
