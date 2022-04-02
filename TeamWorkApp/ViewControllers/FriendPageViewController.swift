@@ -37,9 +37,9 @@ extension FriendPageViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath) as! ProfilePhotosTableViewCell
         let photo = friend.profilePhotos[indexPath.row]
-        cell.imageView?.image = UIImage(named: "\(photo)")
+        cell.myImage.image = UIImage(named: "\(photo)")
         return cell
     }
 }
