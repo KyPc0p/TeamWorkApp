@@ -9,7 +9,7 @@ import UIKit
 
 class FriendListViewController: UITableViewController {
     
-    var friends = User.getUserData()
+    var friends: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()

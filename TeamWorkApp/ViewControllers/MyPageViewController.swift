@@ -9,7 +9,7 @@ import UIKit
 
 class MyPageViewController: UIViewController {
     
-    var myPage = User.getUserData()
+    var myPage: User!
     
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var profilePhotosTableView: UITableView!

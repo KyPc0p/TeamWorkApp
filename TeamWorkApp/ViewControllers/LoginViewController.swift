@@ -14,23 +14,23 @@ class LoginViewController: UIViewController {
     
     private let user = User.getUserData()
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let tabBarController = segue.destination as? UITabBarController else { return }
-//        guard let viewControllers = tabBarController.viewControllers else { return }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
         
-//        viewControllers.forEach {
-//            if let newsNC = $0 as? UINavigationController {
-//                guard let newsVC = newsNC.topViewController as! NewsViewController else {return}
-//                newsVC.user = user
-//            } else if let contactsNC = $0 as? UINavigationController {
-//                guard let contactsVC = contactsNC.topViewController as? ContactsViewController else {return}
-//                contactsVC.user = user
-//            } else if let profileNC = $0 as? UINavigationController {
-//                guard let profileVC = profileNC.topViewController as! ProfileViewController else {return}
-//                profileVC.user = user
-//            }
-//        }
-//    }
+        for viewController in viewControllers {
+            if let newsNC = viewController as? UINavigationController {
+                guard let newsVC = newsNC.topViewController as? news else { return }
+                
+            } else if let friendNC = viewController as? FriendListNavigationController{
+                guard let friendVC = friendNC.topViewController as? FriendListViewController else { return }
+                friendVC.friends = user
+            } else if let myPageNC = viewController as? MyPageNaviagtionController{
+                guard let myPageVC = myPageNC.topViewController as? MyPageViewController else { return }
+                myPageVC.myPage = user
+            }
+        }
+    }
     
     @IBAction func loginButtonPressed() {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
             )
             return
         }
-//        performSegue(withIdentifier: "showNewsViewController", sender: nil)
+        performSegue(withIdentifier: "showNewsViewController", sender: nil)
     }
     
     @IBAction func forgotUserDataPressed(_ sender: UIButton) {
