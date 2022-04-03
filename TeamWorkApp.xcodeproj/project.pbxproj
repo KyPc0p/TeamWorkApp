@@ -62,18 +62,34 @@
 		7963D34527F21A0A00859E69 /* TeamWorkApp */ = {
 			isa = PBXGroup;
 			children = (
-				7963D34627F21A0A00859E69 /* AppDelegate.swift */,
+				BCA2B1C427F9AEF800696786 /* ViewControllers */,
+				BCA2B1C527F9AF3C00696786 /* Storyboards */,
 				7963D34827F21A0A00859E69 /* SceneDelegate.swift */,
+				7963D34627F21A0A00859E69 /* AppDelegate.swift */,
 				7963D34A27F21A0A00859E69 /* ViewController.swift */,
-				7963D34C27F21A0A00859E69 /* Main.storyboard */,
-				BCA2B1BE27F9AA3200696786 /* News.storyboard */,
 				7963D34F27F21A0B00859E69 /* Assets.xcassets */,
-				BCA2B1C027F9AA6600696786 /* NewsTableViewCell.swift */,
-				BCA2B1C227F9AA7D00696786 /* NewsTableViewController.swift */,
 				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
 				7963D35427F21A0B00859E69 /* Info.plist */,
 			);
 			path = TeamWorkApp;
+			sourceTree = "<group>";
+		};
+		BCA2B1C427F9AEF800696786 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCA2B1C027F9AA6600696786 /* NewsTableViewCell.swift */,
+				BCA2B1C227F9AA7D00696786 /* NewsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCA2B1C527F9AF3C00696786 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7963D34C27F21A0A00859E69 /* Main.storyboard */,
+				BCA2B1BE27F9AA3200696786 /* News.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
