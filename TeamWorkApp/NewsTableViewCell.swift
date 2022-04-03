@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// ABOBA
 class NewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var avatarImage: UIImageView!
