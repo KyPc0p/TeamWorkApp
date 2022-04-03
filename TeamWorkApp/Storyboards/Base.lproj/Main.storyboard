@@ -134,20 +134,20 @@
             </objects>
             <point key="canvasLocation" x="868" y="68"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--MyPage-->
         <scene sceneID="tKu-sH-L9Z">
             <objects>
-                <viewControllerPlaceholder id="m87-os-BAi" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MyPageStoryboard" referencedIdentifier="MyPage" id="m87-os-BAi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="cJ9-Xu-sIt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjr-bm-bDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222" y="544"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--FriendList-->
         <scene sceneID="fyq-qh-KEY">
             <objects>
-                <viewControllerPlaceholder id="SF9-La-DeE" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FriendListStoryboard" referencedIdentifier="FriendList" id="SF9-La-DeE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="IqQ-ze-cVv"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TB0-N7-LbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
