@@ -23,6 +23,9 @@
 		7963D35D27F2241400859E69 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963D35C27F2241400859E69 /* DataManager.swift */; };
 		79F75A0727F9A801009F9844 /* FriendListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */; };
 		79F75A0927F9A893009F9844 /* MyPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */; };
+		BCA2B1C727F9B3DB00696786 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA2B1C627F9B3DB00696786 /* News.storyboard */; };
+		BCA2B1C927F9B3FF00696786 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2B1C827F9B3FF00696786 /* NewsTableViewCell.swift */; };
+		BCA2B1CB27F9B43000696786 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2B1CA27F9B43000696786 /* NewsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		7963D35C27F2241400859E69 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListNavigationController.swift; sourceTree = "<group>"; };
 		79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNavigationController.swift; sourceTree = "<group>"; };
+		BCA2B1C627F9B3DB00696786 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		BCA2B1C827F9B3FF00696786 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		BCA2B1CA27F9B43000696786 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				7963D34C27F21A0A00859E69 /* Main.storyboard */,
+				BCA2B1C627F9B3DB00696786 /* News.storyboard */,
 				6DA7F57027F4CC3D002D94F5 /* FriendListStoryboard.storyboard */,
 				6DA7F58727F8BCBC002D94F5 /* MyPageStoryboard.storyboard */,
 				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
@@ -141,6 +148,8 @@
 				6DA7F57C27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift */,
 				6DA7F58527F8BC76002D94F5 /* MyPageViewController.swift */,
 				79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */,
+				BCA2B1CA27F9B43000696786 /* NewsTableViewController.swift */,
+				BCA2B1C827F9B3FF00696786 /* NewsTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7963D35327F21A0B00859E69 /* LaunchScreen.storyboard in Resources */,
+				BCA2B1C727F9B3DB00696786 /* News.storyboard in Resources */,
 				6DA7F58827F8BCBC002D94F5 /* MyPageStoryboard.storyboard in Resources */,
 				7963D35027F21A0B00859E69 /* Assets.xcassets in Resources */,
 				7963D34E27F21A0A00859E69 /* Main.storyboard in Resources */,
@@ -220,9 +230,11 @@
 			files = (
 				6DA7F57D27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift in Sources */,
 				79F75A0927F9A893009F9844 /* MyPageNavigationController.swift in Sources */,
+				BCA2B1C927F9B3FF00696786 /* NewsTableViewCell.swift in Sources */,
 				6DA7F58627F8BC76002D94F5 /* MyPageViewController.swift in Sources */,
 				6DA7F57527F4DA71002D94F5 /* FriendPageViewController.swift in Sources */,
 				7963D34B27F21A0A00859E69 /* LoginViewController.swift in Sources */,
+				BCA2B1CB27F9B43000696786 /* NewsTableViewController.swift in Sources */,
 				7963D35D27F2241400859E69 /* DataManager.swift in Sources */,
 				6DA7F57327F4CCC9002D94F5 /* FriendListViewController.swift in Sources */,
 				7963D35B27F220A200859E69 /* ProfileInfo.swift in Sources */,
