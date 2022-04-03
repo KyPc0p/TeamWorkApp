@@ -108,7 +108,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Zgn-9a-M4g" id="YPH-dA-MVf"/>
                         <outlet property="userNameTextField" destination="EKF-Dd-lSp" id="jZv-k0-aJ3"/>
-                        <segue destination="CvG-Vy-Xv7" kind="presentation" identifier="toTabBar" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="xQQ-7R-Qa6"/>
+                        <segue destination="CvG-Vy-Xv7" kind="show" identifier="toTabBar" id="xQQ-7R-Qa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

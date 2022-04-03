@@ -9,7 +9,7 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
     
-    var user = User.getUserData()
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
