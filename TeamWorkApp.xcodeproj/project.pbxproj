@@ -144,17 +144,25 @@
 			isa = PBXGroup;
 			children = (
 				7963D34A27F21A0A00859E69 /* LoginViewController.swift */,
-				79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */,
-				6DA7F57227F4CCC9002D94F5 /* FriendListViewController.swift */,
-				6DA7F57427F4DA71002D94F5 /* FriendPageViewController.swift */,
-				6DA7F57C27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift */,
-				6DA7F58527F8BC76002D94F5 /* MyPageViewController.swift */,
-				79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */,
-				79217D6627F9B5A200E20DC7 /* NewsNavigationController.swift */,
 				BCA2B1CA27F9B43000696786 /* NewsTableViewController.swift */,
 				BCA2B1C827F9B3FF00696786 /* NewsTableViewCell.swift */,
+				6DA7F57227F4CCC9002D94F5 /* FriendListViewController.swift */,
+				6DA7F58527F8BC76002D94F5 /* MyPageViewController.swift */,
+				6DA7F57427F4DA71002D94F5 /* FriendPageViewController.swift */,
+				6DA7F57C27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift */,
+				799BFE9627F9DCBC00F46206 /* NavigationControllers */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		799BFE9627F9DCBC00F46206 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79217D6627F9B5A200E20DC7 /* NewsNavigationController.swift */,
+				79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */,
+				79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */,
+			);
+			path = NavigationControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
