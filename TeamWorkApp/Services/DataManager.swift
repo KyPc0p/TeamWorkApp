@@ -19,13 +19,14 @@ class friendList {
     
     let surnames = [
         "Herrington", "White", "Cook", "Valakas",
-        "Statham","Vader", "Smith", "Shelby", "McCormick",
-        "Gaga"
+        "Statham", "Vader", "Smith", "Shelby",
+        "McCormick", "Gaga"
     ]
     
     let avatar = [
-        "Billy Herrington", "Walter White", "Tim Cook",
-        "Glad Valakas", "Jason Statham","Darth Vader", "Will Smith", "Tomas Shelby", "Kenny McCormick", "Lady Gaga"
+        "Billy Herrington", "Walter White", "Tim Cook", "Glad Valakas",
+        "Jason Statham","Darth Vader", "Will Smith", "Tomas Shelby",
+        "Kenny McCormick", "Lady Gaga"
     ]
     
     let personalInformation = [
@@ -34,11 +35,12 @@ class friendList {
         "American business executive, has been the chief executive officer of Apple Inc. since 2011!!. I love thin boxes",
         "Veteran of combat operations of all world wars. Villager streamer.",
         "I love Chinese martial arts, kickboxing and karate, wakeboarding, water skiing, windsurfing and rock climbing.",
-        "American model and actor. Born in North Babylon, New York. Gained fame in Japan as an Internet meme, after a clip from one of my videos",
-        "Chemistry teacher and good family man. I love my job and children. I don't give anything illegal",
-        "American business executive, has been the chief executive officer of Apple Inc. since 2011!!. I love thin boxes",
-        "Veteran of combat operations of all world wars. Villager streamer.",
-        "I love Chinese martial arts, kickboxing and karate, wakeboarding"
+        
+        "Let's build another Death Star...again.Long live the Empire! PS: Who is Anakin Skywalker?",
+        "Actor, husband I love everything related to cinema. A very well mannered young man.",
+        "What can I do to make sure everyone listens to me? Maybe it has something to do with my accent.",
+        "9 years old, South Park. I live every day like new. I honestly don't remember what happened yesterday.",
+        "American singer, songwriter, and actress. You know who I am."
     ]
     
     let profilePhotos: [[String]] = [
