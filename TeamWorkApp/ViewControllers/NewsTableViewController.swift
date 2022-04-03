@@ -30,7 +30,7 @@ class NewsTableViewController: UITableViewController {
         cell.nameLabel.text = news
         cell.avatarImage.image = UIImage(named: news)
         cell.photoImage.image = UIImage(named: photo)
-        cell.timeLabel.text = "Added a new photo \(Int.random(in: 1...24)) hours ago "
+        cell.timeLabel.text = "Added a photo \(Int.random(in: 1...24)) hours ago "
         return cell
     }
 }

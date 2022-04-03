@@ -46,8 +46,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotUserDataPressed(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlerts(title: "Ваш ник", message: "User")
-        : showAlerts(title: "Ваш пароль", message: "Password")
+        ? showAlerts(title: "Ваш ник", message: user.login)
+        : showAlerts(title: "Ваш пароль", message: user.password)
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {

@@ -43,8 +43,8 @@ struct User {
         
         let sortedPersons = persons.sorted(by: { $0.fullName < $1.fullName })
         let user = User(
-            login: "User",
-            password: "Password",
+            login: "LexDeBash",
+            password: "123",
             person: .getPerson(),
             listOfFriends: sortedPersons
         )
