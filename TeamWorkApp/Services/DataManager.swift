@@ -30,12 +30,11 @@ class friendList {
     ]
     
     let personalInformation = [
-        "American model and actor. Born in North Babylon, New York. Gained fame in Japan as an Internet meme, after a clip from one of my videos",
+        "American model and actor. Born in New York. Gained fame in Japan as an Internet meme, after a clip from one of my videos",
         "Chemistry teacher and good family man. I love my job and children. I don't do anything illegal",
-        "American business executive, has been the chief executive officer of Apple Inc. since 2011!!. I love thin boxes",
+        "American business executive, has been the chief executive officer of Apple Inc. I love thin boxes",
         "Veteran of combat operations of all world wars. Villager streamer.",
         "I love Chinese martial arts, kickboxing and karate, wakeboarding, water skiing, windsurfing and rock climbing.",
-        
         "Let's build another Death Star...again.Long live the Empire! PS: Who is Anakin Skywalker?",
         "Actor, husband I love everything related to cinema. A very well mannered young man.",
         "What can I do to make sure everyone listens to me? Maybe it has something to do with my accent.",
