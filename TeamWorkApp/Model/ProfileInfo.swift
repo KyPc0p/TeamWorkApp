@@ -41,11 +41,12 @@ struct User {
             persons.append(person)
         }
         
+        let sortedPersons = persons.sorted(by: { $0.fullName < $1.fullName })
         let user = User(
             login: "User",
             password: "Password",
             person: .getPerson(),
-            listOfFriends: persons
+            listOfFriends: sortedPersons
         )
         
         return user
