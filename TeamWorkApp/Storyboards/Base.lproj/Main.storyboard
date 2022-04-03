@@ -120,7 +120,7 @@
             <objects>
                 <tabBarController id="CvG-Vy-Xv7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="90U-5m-gWo"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V7G-Dn-Q1a">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="V7G-Dn-Q1a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
