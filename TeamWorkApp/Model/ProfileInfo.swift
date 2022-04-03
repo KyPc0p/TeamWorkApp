@@ -70,7 +70,7 @@ struct Person {
             surname: "Efimov",
             profileAvatar: "MyProfilePhoto",
             personalInfo: "IOS developer and teacher at SwiftBook.ru" ,
-            profilePhotos: ["Alexey1","Alexey2","Alexey3"]
+            profilePhotos: ["Profile1","Profile2","Profile3"]
         )
     }
 }
