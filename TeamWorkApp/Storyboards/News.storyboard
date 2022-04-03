@@ -10,7 +10,7 @@
         <!--News-->
         <scene sceneID="UYN-b9-iEM">
             <objects>
-                <navigationController id="uQM-pA-8iA" sceneMemberID="viewController">
+                <navigationController id="uQM-pA-8iA" customClass="NewsNavigationController" customModule="TeamWorkApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News" image="list.bullet.rectangle" catalog="system" id="cnz-n4-IQi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="27n-H3-1N0">

@@ -31,6 +31,7 @@ class FriendListViewController: UITableViewController {
         content.text = friend.fullName
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
+        
         return cell
     }
     

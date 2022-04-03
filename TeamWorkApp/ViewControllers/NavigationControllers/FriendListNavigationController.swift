@@ -11,6 +11,5 @@ class FriendListNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }

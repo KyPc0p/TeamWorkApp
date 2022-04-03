@@ -20,12 +20,12 @@ class LoginViewController: UIViewController {
         
         for viewController in viewControllers {
             if let newsNC = viewController as? NewsNavigationController {
-                guard let newsTVC = newsNC.topViewController as? NewsTableViewController else { return}
-                newsTVC.user = user
-            } else if let friendNC = viewController as? FriendListNavigationController{
+                guard let newsTVC = newsNC.topViewController as? NewsTableViewController else { return }
+                newsTVC.friend = user
+            } else if let friendNC = viewController as? FriendListNavigationController {
                 guard let friendVC = friendNC.topViewController as? FriendListViewController else { return }
                 friendVC.friends = user
-            } else if let myPageNC = viewController as? MyPageNavigationController{
+            } else if let myPageNC = viewController as? MyPageNavigationController {
                 guard let myPageVC = myPageNC.topViewController as? MyPageViewController else { return }
                 myPageVC.myPage = user
             }
@@ -35,8 +35,8 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed() {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlerts(
-                title: "Неверное имя пользователя или пароль",
-                message: "Пожалуйста, введите корректное имя пользователя и пароль",
+                title: "Incorrect Username or password.",
+                message: "Please, Enter correct Username or password.",
                 textField: passwordTextField
             )
             return
@@ -46,8 +46,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotUserDataPressed(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlerts(title: "Ваш ник", message: user.login)
-        : showAlerts(title: "Ваш пароль", message: user.password)
+        ? showAlerts(title: "Your Username", message: user.login)
+        : showAlerts(title: "Your Password", message: user.password)
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
@@ -84,4 +84,3 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
 }
-

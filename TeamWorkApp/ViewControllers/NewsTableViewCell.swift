@@ -10,9 +10,9 @@ import UIKit
 class NewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var photoImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var photoImage: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()

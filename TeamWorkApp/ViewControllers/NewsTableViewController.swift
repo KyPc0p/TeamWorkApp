@@ -9,7 +9,7 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
     
-    var user = User.getUserData()
+    var friend: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +17,11 @@ class NewsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user.listOfFriends.count
+        return friend.listOfFriends.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let friend = user.listOfFriends[indexPath.row]
+        let friend = friend.listOfFriends[indexPath.row]
         let photo = friend.profilePhotos[0]
         let news = friend.profileAvatar
         
@@ -36,3 +36,6 @@ class NewsTableViewController: UITableViewController {
         return cell
     }
 }
+
+
+

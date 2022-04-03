@@ -32,7 +32,6 @@ class FriendPageViewController: UIViewController {
 }
 
 // MARK: - Table View Settings
-
 extension FriendPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         friend.profilePhotos.count
@@ -46,6 +45,7 @@ extension FriendPageViewController: UITableViewDataSource {
         
         let photo = friend.profilePhotos[indexPath.row]
         cell.myImage.image = UIImage(named: "\(photo)")
+        
         return cell
     }
 }
