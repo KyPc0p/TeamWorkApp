@@ -37,7 +37,6 @@ struct User {
                 personalInfo: friendList.shared.personalInformation[index],
                 profilePhotos: friendList.shared.profilePhotos[index]
             )
-            
             persons.append(person)
         }
         
@@ -48,7 +47,6 @@ struct User {
             person: .getPerson(),
             listOfFriends: sortedPersons
         )
-        
         return user
     }
 }
