@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     private let user = User.getUserData()
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
@@ -74,6 +74,7 @@ extension LoginViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField {
             passwordTextField.becomeFirstResponder()
