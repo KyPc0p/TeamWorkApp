@@ -31,6 +31,7 @@ class MyPageViewController: UIViewController {
     
 }
 
+//MARK: -  Table View Settings
 extension MyPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         myPage.person.profilePhotos.count

@@ -31,6 +31,8 @@ class FriendPageViewController: UIViewController {
     
 }
 
+// MARK: - Table View Settings
+
 extension FriendPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         friend.profilePhotos.count

@@ -15,7 +15,8 @@ class FriendListViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 80
     }
-    // MARK: - Table view data source
+    
+// MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         friends.listOfFriends.count
     }
@@ -32,7 +33,8 @@ class FriendListViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
-    // MARK: - Navigation
+    
+// MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let friendPageVC = segue.destination as? FriendPageViewController else { return }
         friendPageVC.friend = sender as? Person
