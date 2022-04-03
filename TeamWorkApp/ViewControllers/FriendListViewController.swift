@@ -19,9 +19,11 @@ class FriendListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         friends.listOfFriends.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         var content = cell.defaultContentConfiguration()
         let friend = friends.listOfFriends[indexPath.row]
         content.image = UIImage(named: friend.profileAvatar)
@@ -44,7 +46,5 @@ extension FriendListViewController {
         performSegue(withIdentifier: "showDetails", sender: friend)
     }
     
-    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
-        false
-    }
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool { false }
 }

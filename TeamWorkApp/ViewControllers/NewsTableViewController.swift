@@ -24,6 +24,7 @@ class NewsTableViewController: UITableViewController {
         let friend = user.listOfFriends[indexPath.row]
         let photo = friend.profilePhotos[0]
         let news = friend.profileAvatar
+        
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: "newsTableViewSell"
         ) as? NewsTableViewCell else { return UITableViewCell() }
@@ -31,6 +32,7 @@ class NewsTableViewController: UITableViewController {
         cell.avatarImage.image = UIImage(named: news)
         cell.photoImage.image = UIImage(named: photo)
         cell.timeLabel.text = "Added a photo \(Int.random(in: 1...24)) hours ago "
+        
         return cell
     }
 }

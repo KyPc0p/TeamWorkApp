@@ -23,24 +23,28 @@ class MyPageViewController: UIViewController {
         fullNameTitle.text = myPage.person.fullName
         profileInfoLabel.text = myPage.person.personalInfo
     }
-
+    
     override func viewDidLayoutSubviews() {
         avatarImage.image = UIImage(named: myPage.person.profileAvatar)
         avatarImage.layer.cornerRadius = avatarImage.frame.height / 2
     }
-
-}
- 
-extension MyPageViewController: UITableViewDataSource {
     
+}
+
+extension MyPageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         myPage.person.profilePhotos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for:  indexPath) as! ProfilePhotosTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "Cell",
+            for:  indexPath
+        ) as! ProfilePhotosTableViewCell
+        
         let photo = myPage.person.profilePhotos[indexPath.row]
         cell.myImage.image = UIImage(named: "\(photo)")
+        
         return cell
     }
 }

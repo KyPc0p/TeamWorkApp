@@ -15,8 +15,8 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var photoImage: UIImageView!
     
     override func layoutSubviews() {
-     super.layoutSubviews()
-     self.avatarImage.layer.cornerRadius = self.avatarImage.frame.width / 2
-     self.avatarImage.clipsToBounds = true
+        super.layoutSubviews()
+        self.avatarImage.layer.cornerRadius = self.avatarImage.frame.width / 2
+        self.avatarImage.clipsToBounds = true
     }
 }
