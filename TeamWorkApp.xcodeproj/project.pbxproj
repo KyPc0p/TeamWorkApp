@@ -97,11 +97,11 @@
 		7963D35E27F3837000859E69 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
 				7963D34C27F21A0A00859E69 /* Main.storyboard */,
 				BCA2B1C627F9B3DB00696786 /* News.storyboard */,
 				6DA7F57027F4CC3D002D94F5 /* FriendListStoryboard.storyboard */,
 				6DA7F58727F8BCBC002D94F5 /* MyPageStoryboard.storyboard */,
-				7963D35127F21A0B00859E69 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";

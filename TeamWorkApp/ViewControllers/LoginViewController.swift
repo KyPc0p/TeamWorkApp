@@ -20,8 +20,8 @@ class LoginViewController: UIViewController {
         
         for viewController in viewControllers {
             if let newsNC = viewController as? NewsNavigationController {
-                guard let newsVC = newsNC.topViewController as? NewsTableViewController else { return}
-                newsVC.user = user
+                guard let newsTVC = newsNC.topViewController as? NewsTableViewController else { return}
+                newsTVC.user = user
             } else if let friendNC = viewController as? FriendListNavigationController{
                 guard let friendVC = friendNC.topViewController as? FriendListViewController else { return }
                 friendVC.friends = user

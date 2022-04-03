@@ -66,7 +66,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xj8-vM-Izx">
-                                <rect key="frame" x="20" y="349" width="374" height="513"/>
+                                <rect key="frame" x="20" y="349" width="374" height="464"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="381" id="YbT-xI-NLL" customClass="ProfilePhotosTableViewCell" customModule="TeamWorkApp" customModuleProvider="target">
@@ -130,10 +130,12 @@
             </objects>
             <point key="canvasLocation" x="421.73913043478262" y="-356.25"/>
         </scene>
-        <!--Friend List Navigation Controller-->
+        <!--Item-->
         <scene sceneID="Vhi-Rt-5Kq">
             <objects>
                 <navigationController id="qg4-B8-wTf" customClass="FriendListNavigationController" customModule="TeamWorkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="K1r-3z-GXI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ljT-RG-MZj">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

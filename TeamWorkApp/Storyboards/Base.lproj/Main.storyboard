@@ -108,7 +108,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Zgn-9a-M4g" id="YPH-dA-MVf"/>
                         <outlet property="userNameTextField" destination="EKF-Dd-lSp" id="jZv-k0-aJ3"/>
-                        <segue destination="CvG-Vy-Xv7" kind="show" identifier="toTabBar" id="xQQ-7R-Qa6"/>
+                        <segue destination="CvG-Vy-Xv7" kind="presentation" identifier="toTabBar" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="xQQ-7R-Qa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="867" y="545"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--News-->
         <scene sceneID="bJj-bf-PwG">
             <objects>
-                <viewControllerPlaceholder id="snZ-8I-zfo" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="News" id="snZ-8I-zfo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="YEL-sV-MlP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnY-3D-vqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

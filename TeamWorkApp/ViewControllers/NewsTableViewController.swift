@@ -9,20 +9,18 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
     
-    var user: User!
+    var user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = view.frame.height / 2
     }
     
-    override func tableView(_ tableView: UITableView,
-                            numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return user.listOfFriends.count
     }
     
-    override func tableView(_ tableView: UITableView,
-                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let friend = user.listOfFriends[indexPath.row]
         let photo = friend.profilePhotos[0]
         let news = friend.profileAvatar
