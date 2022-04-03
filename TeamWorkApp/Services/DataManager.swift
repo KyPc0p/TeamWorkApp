@@ -52,7 +52,7 @@ class friendList {
         ["Will1","Will2","Will3"],
         ["Tomas1","Tomas2","Tomas3"],
         ["Kenny1","Kenny2","Kenny3"],
-        ["Lady","Lady2","Lady3"]
+        ["Lady1","Lady2","Lady3"]
     ]
     
     private init() {}
