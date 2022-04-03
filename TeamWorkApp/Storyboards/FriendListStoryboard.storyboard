@@ -130,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="421.73913043478262" y="-356.25"/>
         </scene>
-        <!--Item-->
+        <!--Friend-->
         <scene sceneID="Vhi-Rt-5Kq">
             <objects>
                 <navigationController id="qg4-B8-wTf" customClass="FriendListNavigationController" customModule="TeamWorkApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="K1r-3z-GXI"/>
+                    <tabBarItem key="tabBarItem" title="Friend" image="person.3" catalog="system" id="K1r-3z-GXI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ljT-RG-MZj">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -150,6 +150,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
