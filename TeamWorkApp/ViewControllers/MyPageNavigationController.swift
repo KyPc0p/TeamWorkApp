@@ -1,5 +1,5 @@
 //
-//  MyPageNaviagtionController.swift
+//  MyPageNavigationController.swift
 //  TeamWorkApp
 //
 //  Created by Артём Харченко on 03.04.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyPageNaviagtionController: UINavigationController {
+class MyPageNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

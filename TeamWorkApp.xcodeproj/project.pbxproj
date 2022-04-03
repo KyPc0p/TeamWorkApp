@@ -22,7 +22,7 @@
 		7963D35B27F220A200859E69 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963D35A27F220A200859E69 /* ProfileInfo.swift */; };
 		7963D35D27F2241400859E69 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963D35C27F2241400859E69 /* DataManager.swift */; };
 		79F75A0727F9A801009F9844 /* FriendListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */; };
-		79F75A0927F9A893009F9844 /* MyPageNaviagtionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F75A0827F9A893009F9844 /* MyPageNaviagtionController.swift */; };
+		79F75A0927F9A893009F9844 /* MyPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		7963D35A27F220A200859E69 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 		7963D35C27F2241400859E69 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79F75A0627F9A801009F9844 /* FriendListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListNavigationController.swift; sourceTree = "<group>"; };
-		79F75A0827F9A893009F9844 /* MyPageNaviagtionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNaviagtionController.swift; sourceTree = "<group>"; };
+		79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				7963D34A27F21A0A00859E69 /* LoginViewController.swift */,
-				79F75A0827F9A893009F9844 /* MyPageNaviagtionController.swift */,
+				79F75A0827F9A893009F9844 /* MyPageNavigationController.swift */,
 				6DA7F57227F4CCC9002D94F5 /* FriendListViewController.swift */,
 				6DA7F57427F4DA71002D94F5 /* FriendPageViewController.swift */,
 				6DA7F57C27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift */,
@@ -219,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA7F57D27F88C9A002D94F5 /* ProfilePhotosTableViewCell.swift in Sources */,
-				79F75A0927F9A893009F9844 /* MyPageNaviagtionController.swift in Sources */,
+				79F75A0927F9A893009F9844 /* MyPageNavigationController.swift in Sources */,
 				6DA7F58627F8BC76002D94F5 /* MyPageViewController.swift in Sources */,
 				6DA7F57527F4DA71002D94F5 /* FriendPageViewController.swift in Sources */,
 				7963D34B27F21A0A00859E69 /* LoginViewController.swift in Sources */,

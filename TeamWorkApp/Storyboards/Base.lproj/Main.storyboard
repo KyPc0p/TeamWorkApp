@@ -108,7 +108,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Zgn-9a-M4g" id="YPH-dA-MVf"/>
                         <outlet property="userNameTextField" destination="EKF-Dd-lSp" id="jZv-k0-aJ3"/>
-                        <segue destination="CvG-Vy-Xv7" kind="presentation" identifier="toTabBar" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="e5Y-wr-Nqq"/>
+                        <segue destination="CvG-Vy-Xv7" kind="presentation" identifier="toTabBar" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="xQQ-7R-Qa6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,6 +119,7 @@
         <scene sceneID="UrG-XP-7w3">
             <objects>
                 <tabBarController id="CvG-Vy-Xv7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="90U-5m-gWo"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V7G-Dn-Q1a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

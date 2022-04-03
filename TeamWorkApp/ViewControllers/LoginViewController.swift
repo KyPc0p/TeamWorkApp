@@ -19,13 +19,13 @@ class LoginViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         
         for viewController in viewControllers {
-            if let newsNC = viewController as? UINavigationController {
-                guard let newsVC = newsNC.topViewController as? news else { return }
+//            if let newsNC = viewController as? UINavigationController {
+//                guard let newsVC = newsNC.topViewController as? news else { return }
                 
-            } else if let friendNC = viewController as? FriendListNavigationController{
+             if let friendNC = viewController as? FriendListNavigationController{
                 guard let friendVC = friendNC.topViewController as? FriendListViewController else { return }
                 friendVC.friends = user
-            } else if let myPageNC = viewController as? MyPageNaviagtionController{
+            } else if let myPageNC = viewController as? MyPageNavigationController{
                 guard let myPageVC = myPageNC.topViewController as? MyPageViewController else { return }
                 myPageVC.myPage = user
             }
@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
             )
             return
         }
-        performSegue(withIdentifier: "showNewsViewController", sender: nil)
+        performSegue(withIdentifier: "toTabBar", sender: nil)
     }
     
     @IBAction func forgotUserDataPressed(_ sender: UIButton) {
