@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--My Page-->
         <scene sceneID="Cp6-BK-1nP">
             <objects>
                 <navigationController id="us5-Gr-RZ7" customClass="MyPageNavigationController" customModule="TeamWorkApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qa5-Oj-9Pn"/>
+                    <tabBarItem key="tabBarItem" title="My Page" image="person.crop.circle" catalog="system" id="qa5-Oj-9Pn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tE8-N9-Age">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -37,13 +37,13 @@
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mSO-mG-vLo">
                                 <rect key="frame" x="20" y="295" width="374" height="56"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-1m-Nb1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-1m-Nb1">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Vd-sC-tzV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="3" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Vd-sC-tzV">
                                         <rect key="frame" x="0.0" y="32" width="374" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="0.53333336109999996" green="0.53333336109999996" blue="0.53725492949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -93,10 +93,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0lH-ui-t9b" firstAttribute="bottom" secondItem="MSA-6j-aYX" secondAttribute="bottom" id="7GA-Hv-6yU"/>
-                            <constraint firstItem="2qZ-pH-Mlf" firstAttribute="width" secondItem="kXp-3v-kBr" secondAttribute="width" multiplier="0.483092" id="Ag1-Cc-ANV"/>
                             <constraint firstItem="MSA-6j-aYX" firstAttribute="leading" secondItem="0lH-ui-t9b" secondAttribute="leading" constant="20" id="Ho1-Ab-Qhh"/>
                             <constraint firstItem="mSO-mG-vLo" firstAttribute="leading" secondItem="0lH-ui-t9b" secondAttribute="leading" constant="20" id="NGa-a1-yqE"/>
                             <constraint firstItem="mSO-mG-vLo" firstAttribute="top" secondItem="2qZ-pH-Mlf" secondAttribute="bottom" constant="10" id="VXA-jl-PJq"/>
+                            <constraint firstItem="2qZ-pH-Mlf" firstAttribute="height" secondItem="kXp-3v-kBr" secondAttribute="height" multiplier="0.223214" id="Wcd-iY-n0e"/>
                             <constraint firstItem="2qZ-pH-Mlf" firstAttribute="centerX" secondItem="0lH-ui-t9b" secondAttribute="centerX" id="fDu-PG-iWQ"/>
                             <constraint firstItem="MSA-6j-aYX" firstAttribute="top" secondItem="mSO-mG-vLo" secondAttribute="bottom" id="iGQ-yZ-ooP"/>
                             <constraint firstItem="0lH-ui-t9b" firstAttribute="trailing" secondItem="mSO-mG-vLo" secondAttribute="trailing" constant="20" id="itp-Gz-3Rc"/>
@@ -105,7 +105,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TFS-fc-J0F">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="omC-ff-Vzn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="omC-ff-Vzn">
+                            <connections>
+                                <segue destination="S6D-Mz-hLe" kind="unwind" unwindAction="unwindSegueWithSegue:" id="nCj-fN-epb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="avatarImage" destination="2qZ-pH-Mlf" id="umM-gn-vEH"/>
@@ -115,11 +119,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fs-1s-UYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="S6D-Mz-hLe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-813" y="-194"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
