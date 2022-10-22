@@ -4,7 +4,13 @@
 MVC
 Отработка правил работы с гитом и коммуникации в команде
 
-![Simulator Screen Shot - iPhone 14 - 2022-10-22 at 16 06 40](https://user-images.githubusercontent.com/79677367/197331060-6774b9ae-36ed-4abe-bc54-7bd13a0f46cb.png)
+<img src="(https://user-images.githubusercontent.com/79677367/197331060-6774b9ae-36ed-4abe-bc54-7bd13a0f46cb.png)" width="500">
+
+<img src="https://user-images.githubusercontent.com/79677367/197331062-fd0b2551-4042-409d-9d4b-9f6075c529f9.png" width="500">
+
+<img src="[path/to/screenshot.png](https://user-images.githubusercontent.com/79677367/197331060-6774b9ae-36ed-4abe-bc54-7bd13a0f46cb.png)" width="500">
+
+<img src="[path/to/screenshot.png](https://user-images.githubusercontent.com/79677367/197331060-6774b9ae-36ed-4abe-bc54-7bd13a0f46cb.png)" width="500">
 
 ![Simulator Screen Shot - iPhone 14 - 2022-10-22 at 16 06 51](https://user-images.githubusercontent.com/79677367/197331062-fd0b2551-4042-409d-9d4b-9f6075c529f9.png)
 
